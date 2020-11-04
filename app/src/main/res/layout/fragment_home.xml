@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/MarvelLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_marvellogo"
+                android:visibility="visible" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/table_margin_top"
+                android:stretchColumns="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MarvelLogo">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/row_margin_top">
+
+                    <TextView
+                        android:id="@+id/txtViewGeneroTitle"
+                        style="@style/Title_Style"
+                        android:layout_width="@dimen/textview_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:text="@string/textView_genero_title" />
+
+                    <TextView
+                        android:id="@+id/txtViewGeneroValue"
+                        android:layout_width="@dimen/textView_value_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:text="@string/textView_genero_value" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/row_margin_top">
+
+                    <TextView
+                        android:id="@+id/txtViewFundacaoTitle"
+                        style="@style/Title_Style"
+                        android:layout_width="@dimen/textview_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:text="@string/textView_funcadao_title" />
+
+                    <TextView
+                        android:id="@+id/txtViewFundacaoValue"
+                        android:layout_width="@dimen/textView_value_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:text="@string/textView_funcadao_value" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/row_margin_top">
+
+                    <TextView
+                        android:id="@+id/txtViewFundadoresTitle"
+                        style="@style/Title_Style"
+                        android:layout_width="@dimen/textview_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:text="@string/textView_fundadadores_title" />
+
+                    <TextView
+                        android:id="@+id/txtViewFundadoresValue"
+                        android:layout_width="@dimen/textView_value_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:text="@string/textView_fundadadores_value" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/row_margin_top">
+
+                    <TextView
+                        android:id="@+id/txtViewSedeTitle"
+                        style="@style/Title_Style"
+                        android:layout_width="@dimen/textview_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:text="@string/textView_sede_title" />
+
+                    <TextView
+                        android:id="@+id/txtViewSedeValue"
+                        android:layout_width="@dimen/textView_value_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:text="@string/textView_sede_value" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/row_margin_top">
+
+                    <TextView
+                        android:id="@+id/txtViewProprietariosTitle"
+                        style="@style/Title_Style"
+                        android:layout_width="@dimen/textview_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:text="@string/textView_proprietarios_title" />
+
+                    <TextView
+                        android:id="@+id/txtViewProprietariosValue"
+                        android:layout_width="@dimen/textView_value_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:text="@string/textView_proprietarios_value" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/row_margin_top">
+
+                    <TextView
+                        android:id="@+id/txtViewPresidenteTitle"
+                        style="@style/Title_Style"
+                        android:layout_width="@dimen/textview_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:text="@string/textView_presidente_title" />
+
+                    <TextView
+                        android:id="@+id/txtViewPresidenteValue"
+                        android:layout_width="@dimen/textView_value_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:text="@string/textView_presidente_value" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/row_margin_top">
+
+                    <TextView
+                        android:id="@+id/txtViewPessoasChaveTitle"
+                        style="@style/Title_Style"
+                        android:layout_width="@dimen/textview_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:text="@string/textView_pessoaschave_title" />
+
+                    <TextView
+                        android:id="@+id/txtViewPessoasChaveValue"
+                        android:layout_width="@dimen/textView_value_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:text="@string/textView_pessoaschave_value" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/row_margin_top">
+
+                    <TextView
+                        android:id="@+id/txtViewProdutosTitle"
+                        style="@style/Title_Style"
+                        android:layout_width="@dimen/textview_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:text="@string/textView_produtos_title" />
+
+                    <TextView
+                        android:id="@+id/txtViewProdutosValue"
+                        android:layout_width="@dimen/textView_value_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:text="@string/textView_produtos_value" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/row_margin_top">
+
+                    <TextView
+                        android:id="@+id/txtViewRendaLiquidaTitle"
+                        style="@style/Title_Style"
+                        android:layout_width="@dimen/textview_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:text="@string/textView_rendaliquida_title" />
+
+                    <TextView
+                        android:id="@+id/txtViewRendaLiquidaValue"
+                        android:layout_width="@dimen/textView_value_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:text="@string/textView_rendaliquida_value" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/row_margin_top">
+
+                    <TextView
+                        android:id="@+id/txtViewWebSiteTitle"
+                        style="@style/Title_Style"
+                        android:layout_width="@dimen/textview_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:text="@string/textView_website_title" />
+
+                    <TextView
+                        android:id="@+id/txtViewWebSiteValue"
+                        android:layout_width="@dimen/textView_value_width"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/textview_margin_start"
+                        android:layout_marginLeft="@dimen/textview_margin_start"
+                        android:autoLink="web"
+                        android:text="@string/textView_website_value" />
+                </TableRow>
+
+            </TableLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

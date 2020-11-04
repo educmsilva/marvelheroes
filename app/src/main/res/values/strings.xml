@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Marvel Heroes</string>
+    <string name="tab_text_1">Home</string>
+    <string name="tab_text_2">Super-heróis</string>
+    <string name="tab_text_3">QRCode</string>
+    <string name="textView_genero_title">Gênero</string>
+    <string name="textView_genero_value">Editora</string>
+    <string name="textView_funcadao_title">Fundação</string>
+    <string name="textView_funcadao_value">1939 (como Timely Comics)</string>
+    <string name="textView_fundadadores_title">Fundador(es)</string>
+    <string name="textView_fundadadores_value">Martin Goodman</string>
+    <string name="textView_sede_title">Sede</string>
+    <string name="textView_sede_value">135 W. 50th Street, Nova York, NY, Estados Unidos</string>
+    <string name="textView_proprietarios_title">Proprietário(s)</string>
+    <string name="textView_proprietarios_value">The Walt Disney Company, dona da Marvel Entertainment, LLC, companhia à qual pertence a Marvel Comics.</string>
+    <string name="textView_presidente_title">Presidente</string>
+    <string name="textView_presidente_value">Kevin Feige</string>
+    <string name="textView_pessoaschave_title">Pessoas-chave</string>
+    <string name="textView_pessoaschave_value">C.B. Cebulski, editor-chefe. Dan Buckley, editor, COO. Stan Lee, antigo editor-chefe, editor</string>
+    <string name="textView_produtos_title">Produtos</string>
+    <string name="textView_produtos_value">Revistas, livros e filmes</string>
+    <string name="textView_rendaliquida_title">Renda líquida</string>
+    <string name="textView_rendaliquida_value">US$326.3 milhões (2015)</string>
+    <string name="textView_website_title">Website oficial</string>
+    <string name="textView_website_value">www.marvel.com</string>
+    <string name="image_thumbhero_content_desc">Imagem do Super Héroi</string>
+    <string name="buton_page_text">Página</string>
+    <string name="buton_load_text">Atualizar</string>
+    <string name="buton_close_text">Fechar</string>
+    <string name="alert_camera_permission">Permissão necessária para ler QRCode</string>
+
+
+</resources>
